@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>출력결과</title>
+</head>
+<body>
+<script>
+function solution(a)
+{
+    let sum = 0;
+    for (let i = 0; i<a.length;i++)
+    {
+        sum +=a[i]
+    }
+    if(sum==100)
+    return console.log("백설공주")
+    else
+    return console.log("아님")
+}
+let arr = [20,7,23,19,10,15,25,8,13]
+console.log(solution(arr))
+</script>
+</body>
+</html>

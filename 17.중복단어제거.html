@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function solution(s) {
+            let answer;
+            answer = s.filter(function(v,i){
+                if(s.indexOf(v===i)) return true;
+            })
+            return answer;
+        }
+        let str=["good","time","good","time","student"]
+    </script>
+</body>
+</html>
+<!-- 단어 자체도 배열로 합치면 모든 글자가 되므로 똑같이 indexOf로 통해서 찾아도 된다 -->
