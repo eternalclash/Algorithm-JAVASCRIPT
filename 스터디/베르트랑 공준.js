@@ -1,6 +1,6 @@
 function solution (n)
 { let sum=0;
-    for(let i=n;i<=2*n;i++)
+    for(let i=n+1;i<=2*n;i++)
     {   let flag=1;
         if(i==1)
         {
