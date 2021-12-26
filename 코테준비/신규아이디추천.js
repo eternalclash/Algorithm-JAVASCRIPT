@@ -28,14 +28,3 @@ function solution(new_id) {
  //7번째줄, 8번쨰 줄은 6번째 줄 응용
 
  //10번쨰줄, answer.charAt(length-1)=>맨마지막 글자, .repeat(3-length) 3글자가 될때까지 반복 length+x=3
-function solution(new_id)
-{
-    let answer = new_id
-    .toLowerCase()
-    .replace(/[^\w._-]/g,'')
-    .replace(/\.{2,}/g,'')
-    .replace(/^\.|\.$/g,'')   
-    .replace(/^$/,"a")
-    .slice(0,15).replace(/\.$/,'');
-    return answer.length>2? answer: answer+answer.charAt(answer.length-1).repeat(3-length)
-}
