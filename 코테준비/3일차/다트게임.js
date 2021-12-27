@@ -5,7 +5,7 @@ function solution(dartResult) {
    
     for(let i=0 ;i<arr.length;i++)
     {   if(arr[i]==0&&arr[i-1]==1)
-        {
+        {   
             arr[i]=10
         }
         if(isNaN(arr[i]))
@@ -24,6 +24,7 @@ function solution(dartResult) {
           }
         }
     }
+    console.log(num)
     for(let i=0;i<num.length;i++)
     {
         if(num[i]=='*')
@@ -43,4 +44,4 @@ function solution(dartResult) {
     return answer;
 }
 console.log(solution("1S2D*3T"))
-console.log(solution("1D2S#10S"))
+

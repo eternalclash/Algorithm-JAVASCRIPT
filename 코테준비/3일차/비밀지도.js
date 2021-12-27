@@ -1,15 +1,15 @@
 function solution(n, arr1, arr2) {
     var answer = [];
-    let first = Array.from({length:n},()=>[])
-    let second = Array.from({length:n},()=>[])
-    let sum = Array.from({length:n},()=>"")
+    let first = Array.from({length:n},()=>[]) //지도1 
+    let second = Array.from({length:n},()=>[])  //지도2
+    let sum = Array.from({length:n},()=>"") //최종 지도(지도1+지도2섞은 것)
     for(let i=0 ;i<arr1.length;i++)
     {  
         while(arr1[i] !== 0) {
             first[i].unshift(arr1[i] % 2);
             arr1[i] = Math.floor(arr1[i]/2);
         }
-        while(first[i].length<n)
+        while(first[i].length<n)   
         first[i].unshift(0)
     }
     for(let i=0 ;i<arr2.length;i++)
